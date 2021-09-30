@@ -1,0 +1,50 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-image: url();
+  gap: 8px;
+  grid-template-rows: 0.5fr 1fr 0.5fr;
+  margin: 8px;
+}
+
+.container > * {
+  grid-row: 2;
+border: solid black;
+background-color: white;
+width: 100%;
+height: 300px;
+}
+
+.poke-left {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.attack-left {
+  display: grid;
+  grid-template-columns: 10%;
+  margin: 5px;
+}
+
+.poke-center {
+  text-align:center;
+}
+
+.poke-center button {
+  margin-top: 25%;
+}
+
+.attack-right {
+  margin: 5px;
+  display: grid;
+  grid-template-columns: 90% 10%;
+}
+
+.attack-right>*{
+  grid-column: 2;
+}
+
+.poke-right {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: end;
+}
