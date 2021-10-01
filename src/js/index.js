@@ -40,12 +40,12 @@ const pokeAttacksRight = (e, i) => {
 
 const pokeStartLeft = () => {
   pokeLeft.innerHTML = `<div class="health-left">Vida =>${pokemon1.health} &nbsp &nbsp Nivel => ${pokemon1.level}</div>
-  <div class="pokeName-left">${pokemon1.name} </div>`;
+    <div class="pokeName-left">${pokemon1.name} </div>`;
   pokemon1.attacks.forEach((e, i) => pokeAttacksLeft(e, i));
 };
 const pokeStartRight = () => {
   pokeRight.innerHTML = `<div class="health-left">Nivel => ${pokemon2.level} &nbsp &nbsp Vida =>${pokemon2.health}</div>
-  <div class="pokeName-left">${pokemon2.name} </div>`;
+    <div class="pokeName-left">${pokemon2.name} </div>`;
   pokemon2.attacks.forEach((e, i) => pokeAttacksRight(e, i));
 };
 
